@@ -67,6 +67,7 @@ export default async function Page() {
                     <tr className="">
                         <th className="p-3">Dibuat pada</th>
                         <th className="p-3">Nama Pemilik</th>
+                        <th className="p-3">No HP</th>
                         <th className="p-3">Alamat Tanah</th>
                         <th className="p-3">Dusun</th>
                         <th className="p-3">Nomor Sertifikat Tanah</th>
@@ -79,6 +80,11 @@ export default async function Page() {
                         <tr key={item.id} className={"text-white " + (item.status == 0 ? 'bg-slate-500' : 'bg-green-500')}>
                             <td className="p-3">{String(item.createdAt)}</td>
                             <td className="p-3">{item.namepemilik}</td>
+                            <td className="p-3">
+                                <a href={`https://wa.me/${item.nohp}`}>
+                                    {item.nohp}
+                                </a>
+                            </td>
                             <td className="p-3">{item.alamattanah}</td>
                             <td className="p-3">{item.dusun}</td>
                             <td className="p-3">{item.nosertiftanah}</td>

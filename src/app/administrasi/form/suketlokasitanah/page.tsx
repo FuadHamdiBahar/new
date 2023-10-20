@@ -20,6 +20,7 @@ export default function Page() {
     const formData = new FormData(event.currentTarget);
     const data = {
       namepemilik: formData.get("namepemilik") as string,
+      nohp: formData.get("nohp") as string,
       alamattanah: formData.get("alamattanah") as string,
       luastanah: formData.get("luastanah") as string,
       luasbangunan: formData.get("luasbangunan") as string,
