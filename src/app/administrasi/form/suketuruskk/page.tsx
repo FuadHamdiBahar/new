@@ -31,10 +31,6 @@ export default function Page() {
       gender: formData.get('gender') as string,
     };
 
-    console.log(data);
-
-    return;
-
 
     const resp = await postAPI("suketpengurusankk/buat", data);
     if (resp.status) {
