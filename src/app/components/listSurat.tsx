@@ -31,6 +31,11 @@ const surat = [
     { id: 26, name: 'Surat Keterangan Wali Orang Tua', to: '/administrasi/form/suketWaliOrtu' },
     { id: 27, name: 'Surat Pengantar Imunisasi', to: '/administrasi/form/superimunisasi' },
     { id: 28, name: 'Surat Perjanjian Utang Piutang', to: '/administrasi/form/superutangpiutang' },
+    { id: 29, name: 'Surat Domisili Lembaga', to: '/administrasi/form/suratdomisililembaga' },
+    { id: 30, name: 'Surat Keterangan Usaha', to: '/administrasi/form/suketusaha' },
+    { id: 31, name: 'Surat Keterangan Beda Tanggal Lahir/Beda Data', to: '/administrasi/form/suketdata' },
+    { id: 32, name: 'Surat Pengantar Keterangan Catatan Kepolisian', to: '/administrasi/form/suketcatatankepolisian' },
+    { id: 33, name: 'Surat Keterangan Kematian', to: '/administrasi/form/suketkematian' },
 ]
 export default function ListSurat() {
 
