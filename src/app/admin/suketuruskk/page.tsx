@@ -76,7 +76,11 @@ export default async function Page() {
                         <tr key={item.id} className={"text-white " + (item.status == 0 ? 'bg-slate-500' : 'bg-green-500')}>
                             <td className="p-3">{String(item.createdAt)}</td>
                             <td className="p-3">{item.name}</td>
-                            <td className="p-3">{item.nohp}</td>
+                            <td className="p-3">
+                                <a href={`https://wa.me/${item.nohp}`}>
+                                    {item.nohp}
+                                </a>
+                            </td>
                             <td className="p-3">
                                 <a href={getDownloadURL(item.fileName)}>Unduh</a>
                                 <button onClick={() => {
