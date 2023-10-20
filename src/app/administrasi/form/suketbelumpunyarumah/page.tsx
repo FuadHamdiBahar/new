@@ -21,6 +21,7 @@ export default function Page() {
     const formData = new FormData(event.currentTarget);
     const data = {
       name: formData.get("name") as string,
+      nohp: formData.get("nohp") as string,
       nik: formData.get("nik") as string,
       alamat: formData.get("alamat") as string,
       gender: formData.get("gender") as string,
@@ -29,6 +30,7 @@ export default function Page() {
       rtrw: formData.get("rtrw") as string,
       dusun: formData.get("dusun") as string,
     };
+
     const resp = await postAPI("suketblmpunyarumah/buat", data);
     if (resp.status) {
       setNama(data.name);
