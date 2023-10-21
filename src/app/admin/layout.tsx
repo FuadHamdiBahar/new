@@ -41,6 +41,10 @@ export default function DashboardLayout({
       { id: 27, name: 'Surat Pengantar Imunisasi', to: '/admin/superimunisasi' },
       { id: 28, name: 'Surat Perjanjian Utang Piutang', to: '/admin/superutangpiutang' },
       { id: 29, name: 'Surat Domisili Lembaga', to: '/admin/suratdomisililembaga' },
+      { id: 30, name: 'Surat Keterangan Usaha', to: '/admin/suketusaha' },
+      { id: 31, name: 'Surat Keterangan Beda Tanggal Lahir/Beda Data', to: '/admin/suketbedadata' },
+      { id: 32, name: 'Surat Pengantar Keterangan Catatan Kepolisian', to: '/admin/suketcatatankepolisian' },
+      { id: 33, name: 'Surat Keterangan Kematian', to: '/admin/suketkematian' },
 
       { id: 100, name: 'Survey', to: '/admin/survey' },
    ]
