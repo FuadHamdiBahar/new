@@ -22,15 +22,19 @@ export default function Page() {
         const data = {
             name: formData.get("name") as string,
             nohp: formData.get("nohp") as string,
+            tempatLahir: formData.get("tempatLahir") as string,
+            tanggalLahir: formData.get("tanggalLahir") as string,
+            gender: formData.get("gender") as string,
+            agama: formData.get("agama") as string,
+            pekerjaan: formData.get("pekerjaan") as string,
+            nik: formData.get("nik") as string,
             alamat: formData.get("alamat") as string,
-            work: formData.get("work") as string,
-            umur: formData.get("umur") as string,
-            name_dua: formData.get("name_dua") as string,
-            alamat_dua: formData.get("alamat_dua") as string,
-            work_dua: formData.get("work_dua") as string,
-            umur_dua: formData.get("umur_dua") as string,
+            jenisUsaha: formData.get("jenisUsaha") as string,
+            alamatUsaha: formData.get("alamatUsaha") as string,
+            tahunMulaiUsaha: formData.get("tahunMulaiUsaha") as string,
         };
-        let resp = await postAPI("superUtangPiutang/buat", data);
+
+        let resp = await postAPI("suketUsaha/buat", data);
         if (resp.status) {
             setNama(data.name);
             setShowModal(true);
