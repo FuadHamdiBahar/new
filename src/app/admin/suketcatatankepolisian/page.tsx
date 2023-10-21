@@ -33,7 +33,7 @@ export default async function Page() {
     React.useEffect(() => {
         const fetchData = async () => {
             try {
-                const resp = await getAPI("suratdomisililembaga/all", {});
+                const resp = await getAPI("suketcatatankepolisian/all", {});
                 if (resp.status) {
                     setPostItem(resp.data.data);
                 }
@@ -47,12 +47,12 @@ export default async function Page() {
     }, []);
 
     function getDownloadURL(filename: string): string {
-        return getBaseUrl() + 'download?filename=' + filename + '&form=SuratDomisiliLembaga';
+        return getBaseUrl() + 'download?filename=' + filename + '&form=SuketCatatanKepolisian';
     }
 
     const deletePost = async (item: any) => {
         try {
-            const url = "suratdomisililembaga/delete/" + item.id;
+            const url = "suketcatatankepolisian/delete/" + item.id;
             const response = await deleteAPI(url);
 
             if (response.status) {
@@ -79,7 +79,7 @@ export default async function Page() {
                     {postItem.map((item: any) =>
                         <tr key={item.id} className={"text-white " + (item.status == 0 ? 'bg-slate-500' : 'bg-green-500')}>
                             <td className="p-3">{String(item.createdAt)}</td>
-                            <td className="p-3">{item.nalemb}</td>
+                            <td className="p-3">{item.name}</td>
                             <td className="p-3">
                                 <a href={`https://wa.me/${item.nohp}`}>
                                     {item.nohp}
