@@ -44,25 +44,6 @@ export default function InputItem() {
             format='############'
 
           />
-
-          {/* <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="nowa" type="text"/> */}
-          {/* <p className="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p> */}
-        </div>
-      </div>
-      <div className="flex flex-wrap -mx-3 mb-6">
-        <div className="w-full px-3">
-          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
-            NIK
-          </label>
-          <PatternFormat
-            name='nik'
-            className='appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
-            format='################'
-
-          />
-
-          {/* <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="nowa" type="text"/> */}
-          {/* <p className="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p> */}
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -93,14 +74,6 @@ export default function InputItem() {
       <div className="flex flex-wrap -mx-3 mb-2">
         <div className="w-full px-3 mb-6 md:mb-0">
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
-            Alamat
-          </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamat" type="text" placeholder="contoh: Jl. Melati no. 4" />
-        </div>
-      </div>
-      <div className="flex flex-wrap -mx-3 mb-2">
-        <div className="w-full px-3 mb-6 md:mb-0">
-          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Jenis Kelamin
           </label>
           <select className='appearance-none block w-1/3 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' name="gender">
@@ -110,7 +83,6 @@ export default function InputItem() {
           {/* <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="warga" type="text" /> */}
         </div>
       </div>
-
       <div className="flex flex-wrap -mx-3 mb-2">
         <div className="w-full px-3 mb-6 md:mb-0">
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
@@ -127,28 +99,29 @@ export default function InputItem() {
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="pekerjaan" type="text" />
         </div>
       </div>
-      <div className="flex flex-wrap -mx-3 mb-2">
-        <div className="w-full px-3 mb-6 md:mb-0">
+      <div className="flex flex-wrap -mx-3 mb-6">
+        <div className="w-full px-3">
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
-            Alamat Bangunan
+            NIK
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamatB" type="text" />
+          <PatternFormat
+            name='nik'
+            className='appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+            format='################'
+
+          />
+
+          {/* <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="nowa" type="text"/> */}
+          {/* <p className="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p> */}
         </div>
       </div>
+
       <div className="flex flex-wrap -mx-3 mb-2">
         <div className="w-full px-3 mb-6 md:mb-0">
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
-            Tipe Bangunan
+            Alamat
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="type" type="text" />
-        </div>
-      </div>
-      <div className="flex flex-wrap -mx-3 mb-2">
-        <div className="w-full px-3 mb-6 md:mb-0">
-          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
-            Ukuran Bangunan
-          </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="buildsize" type="text" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamat" type="text" placeholder="contoh: Jl. Melati no. 4" />
         </div>
       </div>
 
