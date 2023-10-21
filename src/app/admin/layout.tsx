@@ -40,7 +40,9 @@ export default function DashboardLayout({
       { id: 26, name: 'Surat Keterangan Wali Orang Tua', to: '/admin/suketwaliortu' },
       { id: 27, name: 'Surat Pengantar Imunisasi', to: '/admin/superimunisasi' },
       { id: 28, name: 'Surat Perjanjian Utang Piutang', to: '/admin/superutangpiutang' },
-      { id: 29, name: 'Survey', to: '/admin/survey' },
+      { id: 29, name: 'Surat Domisili Lembaga', to: '/admin/suratdomisililembaga' },
+
+      { id: 100, name: 'Survey', to: '/admin/survey' },
    ]
    return (
       <section>
