@@ -29,7 +29,9 @@ export default function Page() {
             work: formData.get("pekerjaan") as string,
             nik: formData.get("nik") as string,
             alamat: formData.get("alamat") as string,
+            tujuan: formData.get("tujuan") as string,
         };
+
 
         let resp = await postAPI("suketcatatankepolisian/buat", data);
         if (resp.status) {
