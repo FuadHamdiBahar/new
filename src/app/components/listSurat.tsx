@@ -33,7 +33,7 @@ const surat = [
     { id: 28, name: 'Surat Perjanjian Utang Piutang', to: '/administrasi/form/superutangpiutang' },
     { id: 29, name: 'Surat Domisili Lembaga', to: '/administrasi/form/suratdomisililembaga' },
     { id: 30, name: 'Surat Keterangan Usaha', to: '/administrasi/form/suketusaha' },
-    { id: 31, name: 'Surat Keterangan Beda Tanggal Lahir/Beda Data', to: '/administrasi/form/suketdata' },
+    { id: 31, name: 'Surat Keterangan Beda Tanggal Lahir/Beda Data', to: '/administrasi/form/suketbedadata' },
     { id: 32, name: 'Surat Pengantar Keterangan Catatan Kepolisian', to: '/administrasi/form/suketcatatankepolisian' },
     { id: 33, name: 'Surat Keterangan Kematian', to: '/administrasi/form/suketkematian' },
 ]
