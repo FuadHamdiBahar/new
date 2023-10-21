@@ -58,7 +58,7 @@ export default async function Page() {
                     {postItem.map((item: any) =>
 
                         <tr className="bg-slate-500 text-white">
-                            <td className="p-3">{String(item.createdAt)}</td>
+                            <td className="p-3">{String(item.created_at)}</td>
                             <td className="p-3">{item.nama}</td>
                             <td className="p-3">{item.rating}</td>
                             <td className="p-3">{item.kritik_saran}</td>
