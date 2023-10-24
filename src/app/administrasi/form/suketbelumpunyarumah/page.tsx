@@ -31,6 +31,9 @@ export default function Page() {
       dusun: formData.get("dusun") as string,
     };
 
+    console.log(data);
+
+
     const resp = await postAPI("suketblmpunyarumah/buat", data);
     if (resp.status) {
       setNama(data.name);
