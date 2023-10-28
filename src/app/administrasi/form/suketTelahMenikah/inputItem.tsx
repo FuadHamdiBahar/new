@@ -13,7 +13,6 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
 });
 
 export default function InputItem() {
-  const router = useRouter()
   function execute() {
     handleClick()
   }
@@ -201,7 +200,9 @@ export default function InputItem() {
 
         </div>
       </div>
+
       <button onClick={execute} type="submit" className="bg-blue-500 rounded-lg text-white p-3">Submit</button>
+
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
           Data anda telah diupload! silahkan Tunggu 2x24jam

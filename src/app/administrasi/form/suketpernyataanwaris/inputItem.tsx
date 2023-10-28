@@ -13,10 +13,8 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
 });
 
 export default function InputItem() {
-  const router = useRouter();
   function execute() {
-    // handleClick()
-    // router.push('/')
+    handleClick()
   }
 
   const [open, setOpen] = React.useState(false);
@@ -25,11 +23,8 @@ export default function InputItem() {
     setOpen(true);
   };
 
-  const handleClose = (
-    event?: React.SyntheticEvent | Event,
-    reason?: string
-  ) => {
-    if (reason === "clickaway") {
+  const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
       return;
     }
 
@@ -53,18 +48,13 @@ export default function InputItem() {
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
-        <div className="w-full px-3">
-          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-            No.HP
+        <div className="w-full px-3  md:mb-0">
+          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
+            Nomor hp
           </label>
-          <PatternFormat
-            name="nohp"
-            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            format="############"
-          />
-
-          {/* <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="nowa" type="text"/> */}
-          {/* <p className="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p> */}
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            name="nohp" type="text"
+            placeholder="6285123456789" />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -128,10 +118,7 @@ export default function InputItem() {
         </div>
       </div>
 
-
-      <button type="submit" className="bg-blue-500 rounded-lg text-white p-3">
-        Submit
-      </button>
+      <button onClick={execute} type="submit" className="bg-blue-500 rounded-lg text-white p-3">Submit</button>
 
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>

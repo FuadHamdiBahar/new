@@ -12,12 +12,18 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
 });
 
 export default function InputItem() {
+  function execute() {
+    handleClick()
+  }
+
   const [open, setOpen] = React.useState(false);
-  const handleClose = (
-    event?: React.SyntheticEvent | Event,
-    reason?: string
-  ) => {
-    if (reason === "clickaway") {
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
       return;
     }
 
@@ -149,9 +155,7 @@ export default function InputItem() {
       </div>
 
 
-      <button type="submit" className="bg-blue-500 rounded-lg text-white p-3">
-        Submit
-      </button>
+      <button onClick={execute} type="submit" className="bg-blue-500 rounded-lg text-white p-3">Submit</button>
 
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>
