@@ -38,7 +38,7 @@ export default function InputItem() {
             Nama Lembaga
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            name="nalemb" type="text" />
+            name="nalemb" type="text" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -47,7 +47,7 @@ export default function InputItem() {
             Nomor hp
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            name="nohp" type="text"
+            name="nohp" type="text" required
             placeholder="6285123456789" />
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Alamat
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamat" type="text" placeholder="contoh: Jl. Melati no. 4" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamat" type="text" required placeholder="contoh: Jl. Melati no. 4" />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -66,7 +66,7 @@ export default function InputItem() {
               <label htmlFor='tempatberdiri' className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                 Tempat Berdiri
               </label>
-              <input name='tempatberdiri' type="text" className='appearance-none block w-full p-4 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' />
+              <input name='tempatberdiri' type="text" required className='appearance-none block w-full p-4 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' />
             </div>
             <div className='flex flex-col'>
               <label htmlFor='tglberdiri' className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
@@ -75,6 +75,7 @@ export default function InputItem() {
               <PatternFormat
                 format='##/##/####'
                 name='tglberdiri'
+                required
                 className='appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
               ></PatternFormat>
               <span className='text-gray-500 text-sm'>Format: Tanggal/Bulan/Tahun (01/01/2000)</span>
@@ -88,7 +89,7 @@ export default function InputItem() {
             Luas tanah
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            name="luastanah" type="text" />
+            name="luastanah" type="text" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-3">
@@ -97,7 +98,7 @@ export default function InputItem() {
             Luas Bangunan
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            name="luasbangunan" type="text" />
+            name="luasbangunan" type="text" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -106,7 +107,7 @@ export default function InputItem() {
             Dusun
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            name="dusun" type="text" />
+            name="dusun" type="text" required />
         </div>
       </div>
 

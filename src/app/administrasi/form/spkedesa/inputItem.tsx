@@ -42,7 +42,7 @@ export default function InputItem() {
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             name="name"
             type="text"
-            placeholder="Muh. Gibran"
+            placeholder="Muh. Gibran" required
           />
           {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
         </div>
@@ -54,7 +54,7 @@ export default function InputItem() {
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             name="nohp" type="text"
-            placeholder="6285123456789" />
+            placeholder="6285123456789" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -69,7 +69,7 @@ export default function InputItem() {
               </label>
               <input
                 name="tempatlahir"
-                type="text"
+                type="text" required
                 className="appearance-none block w-full p-4 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               />
             </div>
@@ -84,7 +84,7 @@ export default function InputItem() {
                 format="##/##/####"
                 name="tgl"
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              ></PatternFormat>
+                required></PatternFormat>
               <span className="text-gray-500 text-sm">
                 Format: Tanggal/Bulan/Tahun (01/01/2000)
               </span>
@@ -100,7 +100,7 @@ export default function InputItem() {
           <input
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             name="nik"
-            type="text"
+            type="text" required
           />
         </div>
       </div>
@@ -112,7 +112,7 @@ export default function InputItem() {
           <input
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             name="nokk"
-            type="text"
+            type="text" required
           />
         </div>
       </div>
@@ -124,7 +124,7 @@ export default function InputItem() {
           <input
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             name="alamat"
-            type="text"
+            type="text" required
             placeholder="contoh: Jl. Melati no. 4"
           />
         </div>
@@ -153,7 +153,7 @@ export default function InputItem() {
           <input
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             name="agama"
-            type="text"
+            type="text" required
           />
         </div>
       </div>
@@ -165,7 +165,7 @@ export default function InputItem() {
           <input
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             name="pekerjaan"
-            type="text"
+            type="text" required
           />
         </div>
       </div>
@@ -177,7 +177,7 @@ export default function InputItem() {
           <input
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             name="dusun"
-            type="text"
+            type="text" required
           />
         </div>
       </div>
@@ -189,7 +189,7 @@ export default function InputItem() {
           <input
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             name="tujuan"
-            type="text"
+            type="text" required
           />
         </div>
       </div>

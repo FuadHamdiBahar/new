@@ -39,8 +39,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Nama Lengkap
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="name" type="text" placeholder="Muh. Gibran" />
-          {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="name" type="text" required placeholder="Muh. Gibran" />
         </div>
       </div>
 
@@ -50,7 +49,7 @@ export default function InputItem() {
             Nomor hp
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            name="nohp" type="text"
+            name="nohp" type="text" required
             placeholder="6285123456789" />
         </div>
       </div>
@@ -64,11 +63,8 @@ export default function InputItem() {
             name='nik'
             className='appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
             format='################'
-
+            required
           />
-
-          {/* <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="nowa" type="text"/> */}
-          {/* <p className="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p> */}
         </div>
       </div>
 
@@ -77,7 +73,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Alamat
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamat" type="text" placeholder="contoh: Jl. Melati no. 4" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamat" type="text" required placeholder="contoh: Jl. Melati no. 4" />
         </div>
       </div>
 
@@ -90,7 +86,7 @@ export default function InputItem() {
             <option value="Laki-laki">Laki-laki</option>
             <option value="perempuan">Perempuan</option>
           </select>
-          {/* <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="warga" type="text" /> */}
+          {/* <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="warga" type="text" required /> */}
         </div>
       </div>
 
@@ -100,7 +96,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Pekerjaan
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="work" type="text" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="work" type="text" required />
         </div>
       </div>
 
@@ -109,7 +105,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Agama
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="agama" type="text" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="agama" type="text" required />
         </div>
       </div>
 
@@ -118,7 +114,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             RT/RW
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="rtrw" type="text" placeholder='01/01' />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="rtrw" type="text" required placeholder='01/01' />
         </div>
       </div>
 
@@ -127,7 +123,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Dusun
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="dusun" type="text" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="dusun" type="text" required />
         </div>
       </div>
 

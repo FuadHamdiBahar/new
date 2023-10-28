@@ -39,7 +39,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Nama Lengkap
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="namepria" type="text" placeholder="Muh. Gibran" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="namepria" type="text" required placeholder="Muh. Gibran" />
           {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
         </div>
       </div>
@@ -50,7 +50,7 @@ export default function InputItem() {
             Nomor Hp
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            name="nohppria" type="text" placeholder="Muh. Gibran" />
+            name="nohppria" type="text" required placeholder="Muh. Gibran" />
           {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
         </div>
       </div>
@@ -62,7 +62,7 @@ export default function InputItem() {
               <label htmlFor='tgl' className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                 Tempat Lahir
               </label>
-              <input name='tempatlahirpria' type="text" className='appearance-none block w-full p-4 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' />
+              <input name='tempatlahirpria' type="text" required className='appearance-none block w-full p-4 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' />
             </div>
             <div className='flex flex-col'>
 
@@ -72,6 +72,7 @@ export default function InputItem() {
               <PatternFormat
                 format='##/##/####'
                 name='tglpria'
+                required
                 className='appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
               ></PatternFormat>
               <span className='text-gray-500 text-sm'>Format: Tanggal/Bulan/Tahun (01/01/2000)</span>
@@ -85,7 +86,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Alamat
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamatpria" type="text" placeholder="contoh: Jl. Melati no. 4" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamatpria" type="text" required placeholder="contoh: Jl. Melati no. 4" />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -93,7 +94,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Agama
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="agamapria" type="text" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="agamapria" type="text" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -101,7 +102,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Pekerjaan
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="workpria" type="text" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="workpria" type="text" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-6">
@@ -110,7 +111,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Nama Lengkap
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="namewanita" type="text" placeholder="Muh. Gibran" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="namewanita" type="text" required placeholder="Muh. Gibran" />
           {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
         </div>
       </div>
@@ -121,7 +122,7 @@ export default function InputItem() {
             Nomor Hp
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            name="nohpwanita" type="text" placeholder="Muh. Gibran" />
+            name="nohpwanita" type="text" required placeholder="Muh. Gibran" />
           {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
         </div>
       </div>
@@ -133,7 +134,7 @@ export default function InputItem() {
               <label htmlFor='tgl' className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                 Tempat Lahir
               </label>
-              <input name='tempatlahirwanita' type="text" className='appearance-none block w-full p-4 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' />
+              <input name='tempatlahirwanita' type="text" required className='appearance-none block w-full p-4 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' />
             </div>
             <div className='flex flex-col'>
 
@@ -156,7 +157,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Alamat
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamatwanita" type="text" placeholder="contoh: Jl. Melati no. 4" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamatwanita" type="text" required placeholder="contoh: Jl. Melati no. 4" />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -164,7 +165,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Agama
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="agamawanita" type="text" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="agamawanita" type="text" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -172,7 +173,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Pekerjaan
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="workwanita" type="text" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="workwanita" type="text" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -182,7 +183,7 @@ export default function InputItem() {
               <label htmlFor='tgl' className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                 Tempat Nikah
               </label>
-              <input name='lokasinikah' type="text" className='appearance-none block w-full p-4 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' />
+              <input name='lokasinikah' type="text" required className='appearance-none block w-full p-4 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' />
             </div>
             <div className='flex flex-col'>
 
@@ -192,6 +193,7 @@ export default function InputItem() {
               <PatternFormat
                 format='##/##/####'
                 name='tglnikah'
+                required
                 className='appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
               ></PatternFormat>
               <span className='text-gray-500 text-sm'>Format: Tanggal/Bulan/Tahun (01/01/2000)</span>

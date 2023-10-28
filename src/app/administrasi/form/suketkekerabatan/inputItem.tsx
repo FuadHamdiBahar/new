@@ -42,6 +42,7 @@ export default function InputItem() {
                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                         name="name"
                         type="text"
+                        required
                         placeholder="Muh. Gibran"
                     />
                     {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
@@ -54,6 +55,7 @@ export default function InputItem() {
                     </label>
                     <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                         name="nohp" type="text"
+                        required
                         placeholder="6285123456789" />
                 </div>
             </div>
@@ -70,6 +72,7 @@ export default function InputItem() {
                             <input
                                 name="tempatlahir"
                                 type="text"
+                                required
                                 className="appearance-none block w-full p-4 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                             />
                         </div>
@@ -84,6 +87,7 @@ export default function InputItem() {
                                 format="##/##/####"
                                 name="tgl"
                                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                required
                             ></PatternFormat>
                             <span className="text-gray-500 text-sm">
                                 Format: Tanggal/Bulan/Tahun (01/01/2000)
@@ -101,6 +105,7 @@ export default function InputItem() {
                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         name="alamat"
                         type="text"
+                        required
                         placeholder="contoh: Jl. Melati no. 4"
                     />
                 </div>
@@ -117,7 +122,8 @@ export default function InputItem() {
                         <option value="Laki-laki">Laki-laki</option>
                         <option value="perempuan">Perempuan</option>
                     </select>
-                    {/* <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="warga" type="text" /> */}
+                    {/* <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="warga" type="text"
+                    required /> */}
                 </div>
             </div>
 
@@ -130,6 +136,7 @@ export default function InputItem() {
                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         name="nik"
                         type="text"
+                        required
                     />
                 </div>
             </div>

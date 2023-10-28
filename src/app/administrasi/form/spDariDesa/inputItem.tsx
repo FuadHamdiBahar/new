@@ -41,9 +41,8 @@ export default function FormItem() {
                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                         name="name"
                         type="text"
-                        placeholder="Muh. Gibran"
+                        placeholder="Muh. Gibran" required
                     />
-                    {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                 </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-2">
@@ -53,7 +52,7 @@ export default function FormItem() {
                     </label>
                     <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                         name="nohp" type="text"
-                        placeholder="6285123456789" />
+                        placeholder="6285123456789" required />
                 </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
@@ -64,7 +63,7 @@ export default function FormItem() {
                     <PatternFormat
                         name="nik"
                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        format="################"
+                        format="################" required
                     />
 
                     {/* <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="nowa" type="text"/> */}
@@ -80,7 +79,7 @@ export default function FormItem() {
                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         name="alamat"
                         type="text"
-                        placeholder="contoh: Jl. Melati no. 4"
+                        placeholder="contoh: Jl. Melati no. 4" required
                     />
                 </div>
             </div>
@@ -92,7 +91,7 @@ export default function FormItem() {
                     <input
                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         name="warga"
-                        type="text"
+                        type="text" required
                     />
                 </div>
             </div>
@@ -111,7 +110,7 @@ export default function FormItem() {
                                 name="tempatlahir"
                                 type="text"
                                 className="appearance-none block w-full p-4 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                            />
+                                required />
                         </div>
                         <div className="flex flex-col">
                             <label
@@ -124,7 +123,7 @@ export default function FormItem() {
                                 format="##/##/####"
                                 name="tgl"
                                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                            ></PatternFormat>
+                                required></PatternFormat>
                             <span className="text-gray-500 text-sm">
                                 Format: Tanggal/Bulan/Tahun (01/01/2000)
                             </span>
@@ -140,7 +139,7 @@ export default function FormItem() {
                     <input
                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         name="agama"
-                        type="text"
+                        type="text" required
                     />
                 </div>
             </div>
@@ -152,7 +151,7 @@ export default function FormItem() {
                     <input
                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         name="pekerjaan"
-                        type="text"
+                        type="text" required
                     />
                 </div>
             </div>
@@ -164,7 +163,7 @@ export default function FormItem() {
                     <input
                         className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         name="for"
-                        type="text"
+                        type="text" required
                     />
                 </div>
             </div>

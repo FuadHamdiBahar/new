@@ -38,7 +38,7 @@ export default function InputItem() {
             Nama Yang Salah
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            name="namaSalah" type="text" placeholder="Muh. Alfred" />
+            name="namaSalah" type="text" placeholder="Muh. Alfred" required />
         </div>
       </div>
 
@@ -51,7 +51,7 @@ export default function InputItem() {
             format='##/##/####'
             name='tanggalLahirSalah'
             className='appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
-          ></PatternFormat>
+            required ></PatternFormat>
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-6">
@@ -60,7 +60,7 @@ export default function InputItem() {
             Nama Yang Benar
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            name="namaBenar" type="text" placeholder="Muh. Alfred" />
+            name="namaBenar" type="text" placeholder="Muh. Alfred" required />
         </div>
       </div>
 
@@ -73,7 +73,7 @@ export default function InputItem() {
             format='##/##/####'
             name='tanggalLahirBenar'
             className='appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
-          ></PatternFormat>
+            required></PatternFormat>
         </div>
       </div>
 
@@ -84,7 +84,7 @@ export default function InputItem() {
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             name="nohp" type="text"
-            placeholder="6285123456789" />
+            placeholder="6285123456789" required />
         </div>
       </div>
 
