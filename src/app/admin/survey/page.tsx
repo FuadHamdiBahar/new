@@ -57,7 +57,7 @@ export default async function Page() {
                 <tbody>
                     {postItem.map((item: any) =>
 
-                        <tr className="bg-slate-500 text-white">
+                        <tr key={item.id} className={"text-white " + (item.status == 0 ? 'bg-slate-500' : 'bg-slate-900')}>
                             <td className="p-3">{String(item.created_at)}</td>
                             <td className="p-3">{item.nama}</td>
                             <td className="p-3">{item.rating}</td>

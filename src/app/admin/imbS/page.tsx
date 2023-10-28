@@ -79,7 +79,7 @@ export default async function Page() {
                 </thead>
                 <tbody>
                     {postItem.map((item: any) =>
-                        <tr key={item.id} className={"text-white " + (item.status == 0 ? 'bg-slate-500' : 'bg-green-500')}>
+                        <tr key={item.id} className={"text-white " + (item.status == 0 ? 'bg-slate-500' : 'bg-slate-900')}>
                             <td className="p-3">{String(item.createdAt)}</td>
                             <td className="p-3">{item.name}</td>
                             <td className="p-3">{item.nik}</td>
@@ -92,12 +92,10 @@ export default async function Page() {
                                 {item.status}
                             </td>
                             <td className="p-3">
-                                <a href={getDownloadURL(item.fileName)}>Unduh</a>
-                                <button onClick={() => {
-                                    deletePost(item);
-                                }}
-                                    type="button"
-                                > Hapus</button>
+                                <a href={getDownloadURL(item.fileName)} className="p-2 bg-green-500 rounded-lg">Unduh</a>
+                                <button onClick={() => { deletePost(item); }} className="ml-2 p-2 bg-red-500 rounded-lg" type="button">
+                                    Hapus
+                                </button>
                             </td>
                         </tr>
                     )}

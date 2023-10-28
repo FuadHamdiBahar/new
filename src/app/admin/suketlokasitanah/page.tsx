@@ -77,7 +77,7 @@ export default async function Page() {
                 </thead>
                 <tbody>
                     {postItem.map((item: any) =>
-                        <tr key={item.id} className={"text-white " + (item.status == 0 ? 'bg-slate-500' : 'bg-green-500')}>
+                        <tr key={item.id} className={"text-white " + (item.status == 0 ? 'bg-slate-500' : 'bg-slate-900')}>
                             <td className="p-3">{String(item.createdAt)}</td>
                             <td className="p-3">{item.namepemilik}</td>
                             <td className="p-3">
