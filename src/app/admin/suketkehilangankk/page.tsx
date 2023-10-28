@@ -87,12 +87,10 @@ export default async function Page() {
                             <td className="p-3">{item.nohp}</td>
                             <td className="p-3">{String(item.status)}</td>
                             <td className="p-3">
-                                <a href={getDownloadURL(item.fileName)}>Unduh</a>
-                                <button onClick={() => {
-                                    deletePost(item);
-                                }}
-                                    type="button"
-                                > Hapus</button>
+                                <a href={getDownloadURL(item.fileName)} className="p-2 bg-green-500 rounded-lg">Unduh</a>
+                                <button onClick={() => { deletePost(item); }} className="ml-2 p-2 bg-red-500 rounded-lg" type="button">
+                                    Hapus
+                                </button>
                             </td>
                         </tr>
                     )}
