@@ -44,7 +44,7 @@ export default function Page() {
                 <Link href="/store/addProduct" passHref>
                     <FaPlus className="w-6 h-6"></FaPlus>
                 </Link>
-                <Link href="/" passHref>
+                <Link href="https://sipakamaseta.com/" passHref>
                     <FaHome className="w-6 h-6"></FaHome>
                 </Link>
             </div>
