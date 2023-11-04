@@ -59,7 +59,8 @@ const ModalSurvey: React.FC<ModalSurveyProps> = ({ show, onClose, name }) => {
         setOpen(true);
         onClose();
         console.log(survey.data);
-        window.location.href = "https://wa.me/6285243190409";
+        https://api.whatsapp.com/send?phone=6287890357536&text=Halo%20kak%2C%20saya%20ingin%20order%20UndanganTa%20Paket%20Gold
+        window.location.href = "https://wa.me/6285243190409?text=[Ada surat baru masuk]";
       }
     } catch (err) { }
   }
