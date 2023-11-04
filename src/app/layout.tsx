@@ -52,7 +52,7 @@ export default function RootLayout({
               <p className='text-2xl font-semibold'>Desa Tamannyeleng</p>
               <p className='font-medium text-md'>Kec. Barombong, Kab. Gowa, Sulawesi Selatan</p>
               <ul className='mt-4 mx-3 text-start text-white sm:text-right'>
-                <li className='my-3'><Link href='#'>Home </Link></li>
+                <li className='my-3'><Link href='https://sipakamaseta.com/'>Home </Link></li>
                 <li className='my-3'><Link href='/store'>Ga'de </Link></li>
                 <li className='my-3'><Link href='/administrasi'>Administrasi </Link></li>
               </ul>
