@@ -59,7 +59,7 @@ const ModalSurvey: React.FC<ModalSurveyProps> = ({ show, onClose, name }) => {
         setOpen(true);
         onClose();
         console.log(survey.data);
-        window.location.href = "/administrasi";
+        window.location.href = "https://wa.me/6285243190409";
       }
     } catch (err) { }
   }
