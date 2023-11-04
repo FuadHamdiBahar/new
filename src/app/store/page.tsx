@@ -55,7 +55,7 @@ export default function Page() {
                         <div className="flex flex-col h-full relative">
                             <img
                                 className="rounded-xl object-cover w-full h-32 sm:max-h-44"
-                                src={"https://sipakamaseta.com/uploads/" + item.content}
+                                src={"https://apis.sipakamaseta.com/uploads/" + item.content}
                             />
                             <p className="text-black flex-1 p-2 font-semibold">
                                 {item.title}
