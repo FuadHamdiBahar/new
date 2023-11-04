@@ -1,11 +1,11 @@
 'use client';
 import React from "react"
 import { revalidatePath, } from "next/cache"
-import { getAPI } from "@/utils/api"
+import { getAPI, deleteAPI } from "@/utils/api"
 import { getBaseUrl } from "@/utils/helper";
 
 interface PostItem {
-    id_survey: string,
+    id: string,
     nama: string,
     rating: string,
     kritik_saran: string,
@@ -35,6 +35,21 @@ export default async function Page() {
         fetchData();
     }, []);
 
+    const deletePost = async (item: any) => {
+        console.log(item);
+
+        try {
+            const url = "survey/delete/" + item.id;
+            const response = await deleteAPI(url);
+
+            if (response.status) {
+                window.location.reload();
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
 
     return (
         <div className="min-h-screen ml-64 p-4">
@@ -51,7 +66,7 @@ export default async function Page() {
                         <th className="p-3">Informasi</th>
                         <th className="p-3">Modern</th>
                         <th className="p-3">Pelayanan</th>
-
+                        <th className="p-3">aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -67,6 +82,11 @@ export default async function Page() {
                             <td className="p-3">{item.informasi}</td>
                             <td className="p-3">{item.modern}</td>
                             <td className="p-3">{item.pelayanan}</td>
+                            <td className="p-3">
+                                <button onClick={() => { deletePost(item); }} className="ml-2 p-2 bg-red-500 rounded-lg" type="button">
+                                    Hapus
+                                </button>
+                            </td>
                         </tr>
                     )}
                 </tbody>
