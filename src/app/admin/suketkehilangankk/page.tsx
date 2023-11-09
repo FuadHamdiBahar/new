@@ -70,7 +70,6 @@ export default async function Page() {
                         <th className="p-3">Nama</th>
                         <th className="p-3">NIK</th>
                         <th className="p-3">Nomor HP</th>
-                        <th className="p-3">Status Surat</th>
                         <th className="p-3">Aksi</th>
                     </tr>
                 </thead>
@@ -85,7 +84,6 @@ export default async function Page() {
                                 </a>
                             </td>
                             <td className="p-3">{item.nohp}</td>
-                            <td className="p-3">{String(item.status)}</td>
                             <td className="p-3">
                                 <a href={getDownloadURL(item.fileName)} className="p-2 bg-green-500 rounded-lg">Unduh</a>
                                 <button onClick={() => { deletePost(item); }} className="ml-2 p-2 bg-red-500 rounded-lg" type="button">

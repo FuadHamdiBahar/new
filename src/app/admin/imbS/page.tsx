@@ -73,7 +73,6 @@ export default async function Page() {
                         <th className="p-3">Nama</th>
                         <th className="p-3">NIK</th>
                         <th className="p-3">Nomor HP</th>
-                        <th className="p-3">Status Surat</th>
                         <th className="p-3">Aksi</th>
                     </tr>
                 </thead>
@@ -87,9 +86,6 @@ export default async function Page() {
                                 <a href={`https://wa.me/${item.nohp}`}>
                                     {item.nohp}
                                 </a>
-                            </td>
-                            <td className="p-3">
-                                {item.status}
                             </td>
                             <td className="p-3">
                                 <a href={getDownloadURL(item.fileName)} className="p-2 bg-green-500 rounded-lg">Unduh</a>
