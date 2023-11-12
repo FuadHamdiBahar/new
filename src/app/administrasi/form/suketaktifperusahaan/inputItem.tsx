@@ -42,7 +42,7 @@ export default function InputItem() {
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             name="name"
             type="text"
-            placeholder="Muh. Gibran" required
+            required
           />
         </div>
       </div>
@@ -53,7 +53,7 @@ export default function InputItem() {
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             name="nohp" type="text"
-            placeholder="6285123456789" required />
+            required />
         </div>
       </div>
 

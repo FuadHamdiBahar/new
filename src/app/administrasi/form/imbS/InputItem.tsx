@@ -37,7 +37,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Nama Lengkap
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="name" type="text" required placeholder="Muh. Alfred" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="name" type="text" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -46,7 +46,7 @@ export default function InputItem() {
             Nomor hp
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            name="nohp" type="text" placeholder="6285123456789" required />
+            name="nohp" type="text" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-6">
@@ -93,7 +93,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Alamat
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamat" type="text" required placeholder="contoh: Jl. Melati no. 4" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamat" type="text" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">

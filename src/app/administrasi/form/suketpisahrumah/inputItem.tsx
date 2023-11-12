@@ -48,7 +48,7 @@ export default function InputItem() {
             name="name"
             type="text"
             required
-            placeholder="Muh. Gibran"
+
           />
           {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
         </div>
@@ -185,7 +185,7 @@ export default function InputItem() {
             name="alamat"
             type="text"
             required
-            placeholder="contoh: Jl. Melati no. 4"
+
           />
         </div>
       </div>

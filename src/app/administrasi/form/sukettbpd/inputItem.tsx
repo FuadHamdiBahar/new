@@ -48,7 +48,7 @@ export default function InputItem() {
             name="name"
             type="text"
             required
-            placeholder="Muh. Gibran"
+
           />
         </div>
       </div>

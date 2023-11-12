@@ -39,7 +39,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Nama Lengkap
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="namepria" type="text" required placeholder="Muh. Gibran" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="namepria" type="text" required />
           {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
         </div>
       </div>
@@ -50,7 +50,7 @@ export default function InputItem() {
             Nomor Hp
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            name="nohppria" type="text" required placeholder="Muh. Gibran" />
+            name="nohppria" type="text" required />
           {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
         </div>
       </div>
@@ -86,7 +86,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Alamat
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamatpria" type="text" required placeholder="contoh: Jl. Melati no. 4" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamatpria" type="text" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">
@@ -111,7 +111,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Nama Lengkap
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="namewanita" type="text" required placeholder="Muh. Gibran" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="namewanita" type="text" required />
           {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
         </div>
       </div>
@@ -122,7 +122,7 @@ export default function InputItem() {
             Nomor Hp
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            name="nohpwanita" type="text" required placeholder="Muh. Gibran" />
+            name="nohpwanita" type="text" required />
           {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
         </div>
       </div>
@@ -157,7 +157,7 @@ export default function InputItem() {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
             Alamat
           </label>
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamatwanita" type="text" required placeholder="contoh: Jl. Melati no. 4" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="alamatwanita" type="text" required />
         </div>
       </div>
       <div className="flex flex-wrap -mx-3 mb-2">

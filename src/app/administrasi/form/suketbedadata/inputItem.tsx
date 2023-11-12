@@ -38,7 +38,7 @@ export default function InputItem() {
             Nama Yang Salah
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            name="namaSalah" type="text" placeholder="Muh. Alfred" required />
+            name="namaSalah" type="text" required />
         </div>
       </div>
 
@@ -60,7 +60,7 @@ export default function InputItem() {
             Nama Yang Benar
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-            name="namaBenar" type="text" placeholder="Muh. Alfred" required />
+            name="namaBenar" type="text" required />
         </div>
       </div>
 
@@ -84,7 +84,7 @@ export default function InputItem() {
           </label>
           <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             name="nohp" type="text"
-            placeholder="6285123456789" required />
+            required />
         </div>
       </div>
 
